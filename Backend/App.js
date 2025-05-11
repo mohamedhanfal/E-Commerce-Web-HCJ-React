@@ -12,3 +12,5 @@ app.listen(process.env.PORT, () => {
     `Server started! Listening on port ${process.env.PORT} in ${process.env.NODE_ENV} mode`
   );
 });
+
+// Middleware
