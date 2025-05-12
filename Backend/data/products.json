@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Intel Core i9-13900K",
+    "price": "589.99",
+    "description": "13th Gen Intel Core i9 unlocked desktop processor with 24 cores and 32 threads.",
+    "ratings": 4.8,
+    "images": [{ "Image": "https://example.com/images/i9-13900K.jpg" }],
+    "category": "Processor",
+    "seller": "Intel Store",
+    "stock": 35,
+    "numOfReviews": 1523,
+    "createdAt": "2023-08-15T10:00:00Z"
+  },
+  {
+    "name": "AMD Ryzen 7 7800X3D",
+    "price": "449.00",
+    "description": "8-core, 16-thread processor ideal for gaming and productivity.",
+    "ratings": 4.7,
+    "images": [{ "Image": "https://example.com/images/ryzen-7800x3d.jpg" }],
+    "category": "Processor",
+    "seller": "AMD Direct",
+    "stock": 50,
+    "numOfReviews": 987,
+    "createdAt": "2023-05-20T09:30:00Z"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 4080",
+    "price": "1199.99",
+    "description": "High-performance GPU with ray tracing and DLSS 3 support.",
+    "ratings": 4.9,
+    "images": [{ "Image": "https://example.com/images/rtx-4080.jpg" }],
+    "category": "Graphics Card",
+    "seller": "NVIDIA Official",
+    "stock": 20,
+    "numOfReviews": 2331,
+    "createdAt": "2023-10-01T08:15:00Z"
+  },
+  {
+    "name": "Corsair Vengeance DDR5 32GB (2x16GB)",
+    "price": "159.99",
+    "description": "DDR5 RAM kit running at 6000MHz for high-speed gaming and productivity.",
+    "ratings": 4.6,
+    "images": [{ "Image": "https://example.com/images/corsair-ddr5.jpg" }],
+    "category": "RAM",
+    "seller": "Corsair",
+    "stock": 80,
+    "numOfReviews": 843,
+    "createdAt": "2023-06-10T11:20:00Z"
+  },
+  {
+    "name": "Samsung 980 PRO 1TB NVMe SSD",
+    "price": "119.99",
+    "description": "High-speed PCIe Gen4 SSD with up to 7000MB/s read speed.",
+    "ratings": 4.8,
+    "images": [{ "Image": "https://example.com/images/980pro.jpg" }],
+    "category": "Storage",
+    "seller": "Samsung Store",
+    "stock": 120,
+    "numOfReviews": 1520,
+    "createdAt": "2023-02-22T13:45:00Z"
+  },
+  {
+    "name": "ASUS ROG STRIX Z790-E Gaming WiFi",
+    "price": "399.99",
+    "description": "Premium ATX motherboard with DDR5 support and Wi-Fi 6E.",
+    "ratings": 4.7,
+    "images": [{ "Image": "https://example.com/images/asus-z790e.jpg" }],
+    "category": "Motherboard",
+    "seller": "ASUS",
+    "stock": 40,
+    "numOfReviews": 675,
+    "createdAt": "2023-03-15T10:30:00Z"
+  },
+  {
+    "name": "Cooler Master Hyper 212 Black Edition",
+    "price": "44.99",
+    "description": "Popular air cooler with sleek black finish and improved airflow.",
+    "ratings": 4.5,
+    "images": [{ "Image": "https://example.com/images/hyper212.jpg" }],
+    "category": "CPU Cooler",
+    "seller": "Cooler Master",
+    "stock": 95,
+    "numOfReviews": 1782,
+    "createdAt": "2022-11-12T09:00:00Z"
+  },
+  {
+    "name": "NZXT H510 Mid Tower Case - Black",
+    "price": "79.99",
+    "description": "Minimalistic and compact mid-tower case with tempered glass side panel.",
+    "ratings": 4.6,
+    "images": [{ "Image": "https://example.com/images/nzxt-h510.jpg" }],
+    "category": "Case",
+    "seller": "NZXT",
+    "stock": 60,
+    "numOfReviews": 920,
+    "createdAt": "2023-01-05T12:00:00Z"
+  },
+  {
+    "name": "EVGA 750W GQ Power Supply",
+    "price": "109.99",
+    "description": "750W semi-modular PSU with 80+ Gold efficiency.",
+    "ratings": 4.7,
+    "images": [{ "Image": "https://example.com/images/evga-750gq.jpg" }],
+    "category": "Power Supply",
+    "seller": "EVGA",
+    "stock": 100,
+    "numOfReviews": 1130,
+    "createdAt": "2023-04-11T14:15:00Z"
+  },
+  {
+    "name": "Noctua NF-A12x25 PWM Fan",
+    "price": "29.95",
+    "description": "High-performance 120mm cooling fan with low noise and excellent airflow.",
+    "ratings": 4.9,
+    "images": [{ "Image": "https://example.com/images/noctua-a12x25.jpg" }],
+    "category": "Cooling Fan",
+    "seller": "Noctua",
+    "stock": 150,
+    "numOfReviews": 2045,
+    "createdAt": "2023-07-18T07:45:00Z"
+  }
+]
