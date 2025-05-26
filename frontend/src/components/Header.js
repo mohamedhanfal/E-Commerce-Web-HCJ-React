@@ -1,13 +1,13 @@
 import Search from "./Search";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ cartItems }) {
   return (
     <nav className="navbar row">
       <div className="col-12 col-md-3">
         <div className="navbar-brand">
           <Link to="/">
-            <img width="150px" src="./images/logo.png" alt="SKmart logo" />
+            <img width="150px" src="/images/logo.png" alt="SKmart logo" />
           </Link>
         </div>
       </div>
@@ -21,7 +21,7 @@ export default function Header() {
           Cart
         </span>
         <span className="ml-1" id="cart_count">
-          2
+          {cartItems.length}
         </span>
       </div>
     </nav>
