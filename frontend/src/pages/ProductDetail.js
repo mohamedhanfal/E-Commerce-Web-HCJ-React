@@ -25,11 +25,25 @@ export default function ProductDetail({ cartItems, setCartItems }) {
       toast.success("Item added to cart");
     }
   }
+
+  function increaseQty() {
+    if (qty < product.stock) {
+      setQty(qty + 1);
+    } else {
+      toast.error("Maximum stock reached");
+    }
+  }
+  function decreaseQty() {
+    if (qty > 1) {
+      setQty(qty - 1);
+    }
+  }
+
   return (
     product && (
-      <div class="container container-fluid">
-        <div class="row f-flex justify-content-around">
-          <div class="col-12 col-lg-5 img-fluid" id="product_image">
+      <div className="container container-fluid">
+        <div className="row f-flex justify-content-around">
+          <div className="col-12 col-lg-5 img-fluid" id="product_image">
             <img
               src={product.images[0].Image}
               alt={product.name}
@@ -37,7 +51,7 @@ export default function ProductDetail({ cartItems, setCartItems }) {
               width="auto"
             />
           </div>
-          <div class="col-12 col-lg-5 mt-5">
+          <div className="col-12 col-lg-5 mt-5">
             <h3>{product.name}</h3>
             <p id="product_id">Product # {product._id}</p>
 
@@ -51,21 +65,34 @@ export default function ProductDetail({ cartItems, setCartItems }) {
 
             <hr />
             <p id="product_price">${product.price}</p>
-            <div class="stockCounter d-inline">
-              <span class="btn btn-danger minus">-</span>
+            <div className="stockCounter d-inline">
+              <button
+                className="btn btn-danger minus"
+                onClick={decreaseQty}
+                disabled={product.stock === 0}
+              >
+                -
+              </button>
               <input
                 type="number"
-                class="form-control count d-inline"
+                className="form-control count d-inline"
                 value={qty}
                 readOnly
               />
-              <span class="btn btn-primary plus">+</span>
+              <button
+                className="btn btn-primary plus"
+                onClick={increaseQty}
+                disabled={product.stock === 0}
+              >
+                +
+              </button>
             </div>
             <button
               type="button"
               onClick={addToCart}
+              disabled={product.stock === 0}
               id="cart_btn"
-              class="btn btn-primary d-inline ml-4"
+              className="btn btn-primary d-inline ml-4"
             >
               Add to Cart
             </button>
@@ -82,14 +109,14 @@ export default function ProductDetail({ cartItems, setCartItems }) {
             </p>
 
             <hr />
-            <h4 class="mt-2">Description:</h4>
+            <h4 className="mt-2">Description:</h4>
             <p>{product.description}</p>
 
             <hr />
             <p id="product_seller mb-3">
               Sold by: <strong>{product.seller}</strong>
             </p>
-            <div class="rating w-50"></div>
+            <div className="rating w-50"></div>
           </div>
         </div>
       </div>
